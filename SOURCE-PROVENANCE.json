@@ -1,0 +1,15 @@
+{
+  "prepared_date": "2026-11-24",
+  "public_site_source_commit": "c98953b532941b1208f8fac22c56adaac417a24e",
+  "public_site_checkpoint": "c98953b5",
+  "tenant_extension_origin": "NWCA-Lantern-Tenant-Extension.zip, September 29, 2026",
+  "repository_destination": "https://github.com/LanternBRP/NWCAStore.git",
+  "git_push_performed": false,
+  "public_site_modified": false,
+  "export_only_changes": [
+    "Additional portable Vite configuration and scripts",
+    "Removed unconfigured analytics tag in export only",
+    "Updated obsolete Shopify checkout comment in export only",
+    "Bundled referenced Manus storage assets outside client source/public"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nwca-tenant-portal",
+  "version": "1.0.0",
+  "displayName": "NWCA Member Services",
+  "requiredApiContract": "2026-09",
+  "routes": [
+    { "path": "/membership", "label": "Membership", "capability": "memberships:read" },
+    { "path": "/renewal", "label": "Renewal", "capability": "registrations:write" },
+    { "path": "/donations", "label": "Donate", "capability": "payments:write" },
+    { "path": "/registration", "label": "Registration", "capability": "registrations:write" },
+    { "path": "/gear", "label": "Gear", "capability": "payments:write" },
+    { "path": "/payments", "label": "Payments", "capability": "payments:read" }
+  ],
+  "supportedFeatures": ["registration", "membership", "renewal", "payments", "donations", "commerce", "hosted-checkout"]
+}

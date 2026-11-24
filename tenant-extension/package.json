@@ -1,0 +1,36 @@
+{
+  "name": "@nwca/lantern-tenant-portal-extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NWCA member-services extension for the LanternAMS tenant portal.",
+  "main": "./dist/nwca-lantern-tenant-extension.js",
+  "types": "./dist/types/extension-entry.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/extension-entry.d.ts",
+      "import": "./dist/nwca-lantern-tenant-extension.js"
+    }
+  },
+  "files": ["dist", "README.md", "RELEASE-NOTES.md", "MANIFEST.json"],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "verify:scoped-css": "node scripts-verify-scoped-css.mjs",
+    "build:types": "tsc -p tsconfig.build.json",
+    "build": "pnpm run verify:scoped-css && pnpm run build:types && vite build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^7.0.0",
+    "vitest": "^2.0.0"
+  }
+}
